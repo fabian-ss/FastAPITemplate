@@ -11,6 +11,7 @@ s.close()
 
 config = Config()
 config.bind = [host+":12345"] 
+config.use_reloader = True
 
 asyncio.run(serve(app, config))
 
